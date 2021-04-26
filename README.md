@@ -7,14 +7,17 @@ Supports
 - 3 external buttons
 - up to 1200mA Lithium Battery
 
-#Details
+# Details
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
+
 Step files in case folder.  Print with natural white PLA (translucent) for LEDs
 NOTE:  The board is a sketch only.  Dimensions may not be accurate.
+
 Configuration files for squeezelite-ESP32 in config folder
+
 Example yaml files for Home-Assitant in hass folder
 
-#General Notes.
+# General Notes.
 I trimmed the rear IO header to prevent interferance with the 1200mA battery (see why below)
 The T9 board has nearly everything that you need, although there are a couple of issues.
   The I2c header shares a pin with the LED strip.
