@@ -16,9 +16,9 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 
-Configuration files for squeezelite-ESP32 in ![config](config/) folder
+Configuration files for squeezelite-ESP32 in [config](config/) folder
 
-Example yaml files for Home-Assistant in ![hass](hass/) folder
+Example yaml files for Home-Assistant in [hass](hass/) folder
 
 # General Notes.
 I trimmed the rear IO header to prevent interference with the 1200mA battery (see why below)
