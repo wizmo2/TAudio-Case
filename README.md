@@ -10,7 +10,7 @@ Supports
 # Details
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
-Step files in ![case](case/) folder.  Print with natural white PLA (translucent) for LEDs
+Step files in [case](case/) folder.  Print with natural white PLA (translucent) for LEDs
 NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 
 ![Case Model](case/t_player.png)
