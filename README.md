@@ -10,15 +10,15 @@ Supports
 # Details
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
-Step files in case folder.  Print with natural white PLA (translucent) for LEDs
+Step files in ![case](case/) folder.  Print with natural white PLA (translucent) for LEDs
 NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 
 ![Case Model](case/t_player.png)
 
 
-Configuration files for squeezelite-ESP32 in config folder
+Configuration files for squeezelite-ESP32 in ![config](config/) folder
 
-Example yaml files for Home-Assistant in hass folder
+Example yaml files for Home-Assistant in ![hass](hass/) folder
 
 # General Notes.
 I trimmed the rear IO header to prevent interference with the 1200mA battery (see why below)
