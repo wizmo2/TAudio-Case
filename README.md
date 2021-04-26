@@ -12,6 +12,8 @@ This project was designed for a Squeezelite-ESP32 project used with Home-Assista
 
 Step files in case folder.  Print with natural white PLA (translucent) for LEDs
 NOTE:  The board is a sketch only.  Dimensions may not be accurate.
+![Case Model](cad/t_player.png)
+
 
 Configuration files for squeezelite-ESP32 in config folder
 
