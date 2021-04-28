@@ -12,4 +12,4 @@ The code example shows how to configure home-asstant to
 - Use the device as a test notification device
 - Use the device as an audio notification device
 
-![Dashboard](dashboard.png) ![Light Control](ligth_control.png)
+![Dashboard](Dashboard.png) ![Light Control](ligth_control.png)
