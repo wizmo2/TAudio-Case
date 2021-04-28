@@ -4,7 +4,7 @@ configuration.yaml includes details of home-assitant configuration to add visual
 
 Squeezelite-esp32 is an Ultra-Cool project to create home built squeezebox devices using custom boards like SqueezeAmp or off-the-shelf ESP32 development boards.  This project is based on the TTGO T9 (TAudio) development board.
 
-The (in development) code changes allow integration with the also Ultra-Cool Home-Assistant project, to control the LED strips.  
+The (in development) code changes allow integration with the also Ultra-Cool Home-Assistant project, to incorporate into you home automation.  
 
 The yaml examples show how to configure home-assistant to
 - Control the LEDS using the light template platform 
