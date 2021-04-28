@@ -1,0 +1,120 @@
+light:
+  - platform: template
+    lights:
+     taudio_good:
+       friendly_name: "Notify Good"
+       turn_on:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0'
+       turn_off:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'
+     taudio_warn:
+       friendly_name: "Notify Warn"
+       turn_on:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '60,20,0,60,20,0,60,20,0,60,20,0,60,20,0'
+             - '7'
+       turn_off:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'
+             - '7'
+     taudio_alert:
+       friendly_name: "Notify Alert"
+       turn_on:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0'
+             - '12'
+       turn_off:
+         service: squeezebox.call_method
+         data:
+           entity_id: media_player.squeezelite_taudio
+           command: dmx
+           parameters:
+             - '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'
+             - '12'
+     taudio_all:
+        friendly_name: "TAudio Color"
+        level_template: "{{states('input_number.taudio_l') | int}}"
+        value_template: "{{states('input_number.taudio_l') | int > 0}}"
+        color_template: "({{states('input_number.taudio_h') | int}}, {{states('input_number.taudio_s') | int}})"
+        turn_on:
+          - service: input_number.set_value
+            data:
+              entity_id: input_number.taudio_l
+              value: '{{ state_attr("input_number.taudio_l","initial")|float }}'
+          - service: script.taudio_set
+                - "0"
+        turn_off:
+          - service: input_number.set_value
+            data:
+              entity_id: input_number.taudio_l
+              value: "0"
+          - service: script.taudio_set
+               - "0"
+        set_level:
+          - service: input_number.set_value
+            data:
+              value: "{{ brightness| float }}"
+              entity_id: input_number.taudio_l
+          - service: script.taudio_set
+                - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
+        set_color:
+          - service: input_number.set_value
+            data:
+              value: "{{ h }}"
+              entity_id: input_number.taudio_h
+          - service: input_number.set_value
+            data:
+              value: "{{ s }}"
+              entity_id: input_number.taudio_s
+          - service: script.taudio_set
+               - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
+
+input_number:
+  taudio_h:
+    name: TAudio Hue
+    min: 0
+    max: 360
+  taudio_s:
+    name: TAudio Saturation
+    min: 0
+    max: 100
+  taudio_l:
+    name: TAudio Level
+    initial: 30
+    min: 0
+    max: 255
+    step: 1
+
+script:
+  taudio_set:
+    alias: TAudio Set RGB Color
+    sequence:
+      - service: squeezebox.call_method
+        data:
+          entity_id: media_player.squeezelite_taudio
+          command: dmx
+          parameters:
+            - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
+            - "0"
