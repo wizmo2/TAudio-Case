@@ -118,3 +118,34 @@ script:
           parameters:
             - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
             - "0"
+
+notify:
+  - platform: tts
+    name: tts_announce
+    tts_service: tts.mary_say
+#    tts_service: tts.google_say
+    media_player: media_player.squeezelite_taudio 
+    
+input_text:
+  alert_trigger:
+    name: "Alert Trigger Source"
+
+automation:
+    - id: announce_to_speaker
+      alias: TAudio Announce
+      - platform: state
+        entity_id: input_text.alert_trigger      
+      action:
+      - service: squeezebox.call_method
+        data:
+          command: show
+          parameters:
+          - 'line1: HA Announce'
+          - 'line2: {{ states("input_text.alert_trigger") }}'
+          - 'font: light'
+          - 'duration: 30'
+        entity_id: media_player.squeezelite_taudio
+      - service: notify.tts_announce
+        data:
+          message: {{ states('input_text.alert_trigger') }}
+      mode: single
