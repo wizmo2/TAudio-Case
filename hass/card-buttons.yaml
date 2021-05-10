@@ -1,0 +1,39 @@
+type: horizontal-stack
+cards:
+  - type: vertical-stack
+    cards:
+      - type: button
+        name: Display Visual
+        icon: 'mdi:poll'
+        tap_action:
+          action: call-service
+          service: squeezebox.call_method
+          service_data:
+            entity_id: media_player.squeezelite_taudio
+            command: button
+            parameters:
+              - now_playing
+        show_name: true
+        icon_height: 55px
+      - type: button
+        name: LED Visual
+        icon: 'mdi:reload'
+        tap_action:
+          action: call-service
+          service: squeezebox.call_method
+          service_data:
+            entity_id: media_player.squeezelite_taudio
+            command: led_visual
+        icon_height: 55px
+  - type: light
+    entity: light.taudio_good
+    icon: 'mdi:check-decagram'
+  - type: light
+    entity: light.taudio_warn
+    icon: 'mdi:alert-decagram-outline'
+  - type: light
+    entity: light.taudio_alert
+    icon: 'mdi:alert-decagram'
+    hold_action:
+      action: call-service
+      service: script.taudio_alert_flash
