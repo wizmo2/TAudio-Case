@@ -44,7 +44,7 @@ Backup files for squeezelite-ESP32 in [config](config/) folder
 Example yaml files for Home-Assistant in [hass](hass/) folder
 
 ## General Notes.
-I trimmed the rear IO header to prevent interference with the 1200mA battery (see why below)
+I trimmed the rear IO header to prevent interference with the 1200mA battery (see why it doesn't really matter below).  With a different 1250mAh battery, it was not necessary. 
 
 The T9 board has nearly everything that you need, although there are a couple of issues.
 - The I2c header shares a pin with the LED strip.
