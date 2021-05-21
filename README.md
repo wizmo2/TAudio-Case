@@ -37,7 +37,7 @@ buttons
 buttons_nav
 [{"gpio":34,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_DOWN"}, "longpress":{"pressed":"BCTRLS_LEFT"}},  {"gpio":39,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_UP"}, "longpress":{"pressed":"BCTRLS_RIGHT"}},  {"gpio":36,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_PLAY"}, "longpress":{"pressed":"buttons"}} ]
 ```
-Note: Do not set the "green" LED option as it shares gpio with the Led strip
+Note: Do not set the "green" GPIO option as it shares gpio with the Led strip
 
 Backup files for squeezelite-ESP32 in [config](config/) folder
 
