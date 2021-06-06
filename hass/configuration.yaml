@@ -171,3 +171,51 @@ automation:
         data:
           message: {{ states('input_text.alert_trigger') }}
       mode: single
+    - id: taudio_load_albums
+      alias: taudio_load_albums
+      description: ''
+      trigger:
+      - platform: state
+        entity_id: input_text.taudio_play_albums
+      condition: []
+      action:
+      - service: squeezebox.call_method
+        data:
+          entity_id: media_player.squeezelite_taudio
+          command: playlist
+          parameters:
+            - loadtracks
+            - 'album.titlesearch={{ states(''input_text.taudio_play_albums'') }}'
+      mode: single
+    - id: taudio_load_artists
+      alias: taudio_load_artists
+      description: ''
+      trigger:
+      - platform: state
+        entity_id: input_text.taudio_play_artists
+      condition: []
+      action:
+      - service: squeezebox.call_method
+        data:
+          entity_id: media_player.squeezelite_taudio
+          command: playlist
+          parameters:
+            - loadtracks
+            - 'contributor.namesearch={{ states(''input_text.taudio_play_artists'') }}'
+      mode: single
+    - id: taudio_load_songs
+      alias: taudio_load_songs
+      description: ''
+      trigger:
+      - platform: state
+        entity_id: input_text.taudio_play_songs
+      condition: []
+      action:
+      - service: squeezebox.call_method
+        data:
+          entity_id: media_player.squeezelite_taudio
+          command: playlist
+          parameters:
+            - loadtracks
+            - 'track.titlesearch={{ states(''input_text.taudio_play_songs'') }}'
+      mode: single
