@@ -107,6 +107,14 @@ input_number:
     max: 255
     step: 1
 
+input_text:
+  taudio_play_songs:
+    name: "Play Songs"
+  taudio_play_artists:
+    name: "Play Artist"
+  taudio_play_albums:
+    name: "Play Album"
+
 script:
   taudio_set:
     alias: TAudio Set RGB Color
