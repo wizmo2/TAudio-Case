@@ -1,7 +1,16 @@
 # Squeezelite DIY Projects
 
-## TAudio Case / Squeezebox-Spinner 
+### Squeezebox-Spinner (TAudio-case) 
 Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.
+
+### [Squeezebox-Dial](/twatcher-dial)
+Fixed Squeezebox Bluetooth controller using a TTGO T-Watcher module (to interface with BT speakers)
+
+### [Squeezebox-Soundbar](/bluetooth-soundbar)
+Portable Squeezebox player based on an existing Bluetooth Soundbar.
+
+## TAudio-Case / Squeezebox-Spinner
+This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
 [youtube link](https://youtu.be/1PFEcQugR4s)
 
@@ -10,15 +19,6 @@ Case supports
 - •	interchangeable center caps for speaker, [128x64 SSD1306 two-color I2C oled](https://www.amazon.com/gp/product/B072Q2X2LL), [240x240 ST7789 color SPI oled](https://www.amazon.com/gp/product/B08FB77YY2)
 - 3 external buttons
 - up to 1250mA Lithium Battery
-
-## Other Projects
-
-Twatcher-dial
-
-a1s-soundbar
-
-## Squeezebox-Spinner
-This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
 Step files in [case](case/) folder.  Print with natural white PLA (translucent) for LEDs
 NOTE:  The board is a sketch only.  Dimensions may not be accurate.
