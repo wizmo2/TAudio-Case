@@ -9,7 +9,7 @@ Fixed Squeezebox Bluetooth controller using a TTGO T-Watcher module (to interfac
 ### [Squeezebox-Soundbar](/bluetooth-soundbar)
 Portable Squeezebox player based on an existing Bluetooth Soundbar.
 
-## TAudio-Case / Squeezebox-Spinner
+## Squeezebox-Spinner
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
 [youtube link](https://youtu.be/1PFEcQugR4s)
