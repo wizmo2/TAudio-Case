@@ -10,5 +10,6 @@ The idea would be to use smaller components (possibly a SqueezeAmp) to fit into 
 
 ## Deconstruction
 I resorted to brute force, a hack-saw, and cutters to get into the first unit.  
-The correct method (in retrospect!) is to peel back the display sticker to access 2 screws mounting the display module cover to the main extrusion.  If these are removed, you may beable to pry open the other side to access the left screws.  Once these are removed, I am assuming the cap with the electronics assembly should come off as easily as the speaker end cap.
+
+In retrospect(!), the correct method is to peel back the right side of the display sticker to access 2 screws mounting the display module cover to the main extrusion.  If these are removed, you may beable to pry open the other side to access the left screws.  Once these are removed, I am assuming the cap with the electronics assembly would come off as easily as the speaker end cap.
 
