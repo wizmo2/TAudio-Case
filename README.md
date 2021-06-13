@@ -1,4 +1,4 @@
-# Squeezelite DIY Projects
+# Squeezelite-ESP32 DIY Projects
 
 ### Squeezebox-Spinner (TAudio-case) 
 Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.
@@ -46,6 +46,8 @@ buttons_nav
 ```
 Note: Do not set the "green" GPIO option as it shares gpio with the Led strip
 
+At time of writing, you will need to use the TAudio1.6 branch in my repository (until the led_vu components are merged)
+
 Backup files for squeezelite-ESP32 in [config](config/) folder
 
 Example yaml files for Home-Assistant in [hass](hass/) folder
@@ -60,3 +62,5 @@ The T9 board has nearly everything that you need, although there are a couple of
 -  Most of the exposed IO have pullup resistors pre-installed. (I struggled to get the OLED SPI interface to work without modified code - although it may just be the board I was using)
 
 I haven't yet found a suitable speaker for a "speaker cap" option (as mentioned, will need a driver amp board as well)
+
+
