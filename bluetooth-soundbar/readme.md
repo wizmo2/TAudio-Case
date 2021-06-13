@@ -1,4 +1,4 @@
-# TWatcher-Dial
+# Squeezebox-Soundbar
 Portable Squeezebox player using a bluetooth sound bar and a1S audio kit board
 
 
