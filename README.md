@@ -26,7 +26,7 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 ### Configuration
-**At time of writing, you will need to use the TAudio1.6 branch in my repository (until the led_vu components are merged)**
+**At time of writing, you will need to use build and flash the TAudio1.6 branch in my repository (until the led_vu components are merged)**
 
 For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetooth)
 
