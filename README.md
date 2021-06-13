@@ -1,6 +1,7 @@
-# TAudio-Player Project
-Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.
+# Squeezelite DIY Projects
 
+## TAudio Case / Squeezebox-Spinner 
+Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.
 
 [youtube link](https://youtu.be/1PFEcQugR4s)
 
@@ -16,7 +17,7 @@ Twatcher-dial
 
 a1s-soundbar
 
-## Details
+## Squeezebox-Spinner
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
 Step files in [case](case/) folder.  Print with natural white PLA (translucent) for LEDs
