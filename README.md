@@ -10,6 +10,12 @@ Case supports
 - 3 external buttons
 - up to 1250mA Lithium Battery
 
+## Other Projects
+
+Twatcher-dial
+
+a1s-soundbar
+
 ## Details
 This project was designed for a Squeezelite-ESP32 project used with Home-Assistant as an audio and visual notification device.
 
