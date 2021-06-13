@@ -26,6 +26,7 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 ### Configuration
+**At time of writing, you will need to use the TAudio1.6 branch in my repository (until the led_vu components are merged)**
 
 For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetooth)
 
@@ -45,8 +46,6 @@ buttons_nav
 [{"gpio":34,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_DOWN"}, "longpress":{"pressed":"BCTRLS_LEFT"}},  {"gpio":39,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_UP"}, "longpress":{"pressed":"BCTRLS_RIGHT"}},  {"gpio":36,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_PLAY"}, "longpress":{"pressed":"buttons"}} ]
 ```
 Note: Do not set the "green" GPIO option as it shares gpio with the Led strip
-
-At time of writing, you will need to use the TAudio1.6 branch in my repository (until the led_vu components are merged)
 
 Backup files for squeezelite-ESP32 in [config](config/) folder
 
