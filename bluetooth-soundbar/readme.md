@@ -1,15 +1,18 @@
 # Squeezebox-Soundbar
-Portable Squeezebox player using a bluetooth sound bar and a1S audio kit board
+Portable Squeezebox player using a existing [bluetooth sound bar](https://www.ebay.com/itm/154052571509) and squeezelite-esp32.
 
+Using an existing production bluetooth player is cost-effective alternative to buying speaker components (as a bonus it comes with a shiny case plus a battery and holder too!)
 
-This project was looking at a low cost solution for a portable head-less squeezebox player.  Using an existing production bluetooth player is cost-effective alternative to buying speaker box components (as a bonus it came iwht a decent battery and holder too!)
+The current protoype uses a a1s audio kit.  The solution works well, is well supported by the squeezelite-esp32 dev team, but does required a pretty ugly add on box as the board is a little large.  The result is a promising solution, with half decent sound quality and suprisingly good battery life (using a 1500mAh battery)
 
-The current solution uses a a1s audio kit.  It works well but required a pretty ugly add on box.  The result is a promising solution, with decent sound quality and suprisingly good battery life (using a 1500mAh battery)
-
-The idea would be to use smaller components (possibly a SqueezeAmp) to fit into the existing compartment.  In theory, the display can be replaced with a supported I2C/SPI version.
+Todo: 
+- Look at a final solution with electronics that fit into the existing compartment (SqueezeAmp?)
+- Replace the display module with a SPI/I2C module
+- Investiage ways to extend battery life (especially in standby)
 
 ## Deconstruction
-I resorted to brute force, a hack-saw, and cutters to get into the first unit.  
+I resorted to brute force, a hack-saw, and dykes to get into the first unit!  In retrospect, the correct method is to peel back the right side of the display sticker to expose the 2 screws mounting the display module cover to the body extrusion.  Once removed the cover can be pulled out from under the end cap exposing 2 additional screws securing the end cap to the body extrusion.  With these screws removed, I am assuming the complete cap assembly (with the electronics and battery pack) would have come off as easily as the speaker end cap.
 
-In retrospect(!), the correct method is to peel back the right side of the display sticker to access 2 screws mounting the display module cover to the main extrusion.  If these are removed, you may beable to pry open the other side to access the left screws.  Once these are removed, I am assuming the cap with the electronics assembly would come off as easily as the speaker end cap.
+
+
 
