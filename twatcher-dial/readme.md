@@ -3,8 +3,8 @@ Portable Squeezebox player / Home-Assistant notify device using a T-Watcher modu
 
 ![TWatcher](twatcher-dial1.jpg)
 
-![TWatcher](twatcher-dial2.jpg)
+![TWatcher](twatcher-dial4.jpg)
 
-![TWatcher](twatcher-dial3.jpg)
+![TWatcher](twatcher-dial2.jpg)
 
 
