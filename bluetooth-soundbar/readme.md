@@ -1,5 +1,5 @@
 # Squeezebox-Soundbar
-Portable Squeezebox player using a existing [bluetooth sound bar](https://www.ebay.com/itm/154052571509) and squeezelite-esp32.
+Portable Squeezebox player using an existing [bluetooth sound bar](https://www.ebay.com/itm/154052571509) and squeezelite-esp32.
 
 Using an existing production bluetooth player is cost-effective alternative to buying speaker components (as a bonus it comes with a shiny case plus a battery and holder too!)
 
