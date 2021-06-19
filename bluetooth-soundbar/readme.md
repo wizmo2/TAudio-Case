@@ -9,7 +9,7 @@ The current protoype uses a a1s audio kit.  The solution works well, is well sup
 
 Todo: 
 - Look at a final solution with electronics that fit into the existing compartment (SqueezeAmp?)
-- Replace the display module with a SPI/I2C module
+- Replace the display module with led-dial and small SPI/I2C module
 - Investiage ways to extend battery life (especially in standby)
 
 ## Deconstruction
