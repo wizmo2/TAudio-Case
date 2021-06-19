@@ -5,6 +5,8 @@ Using an existing production bluetooth player is cost-effective alternative to b
 
 The current protoype uses a a1s audio kit.  The solution works well, is well supported by the squeezelite-esp32 dev team, but does required a pretty ugly add on box as the board is a little large.  The result is a promising solution, with half decent sound quality and suprisingly good battery life (using a 1500mAh battery)
 
+![A1S Protype](a1s-soundbar.jpg)
+
 Todo: 
 - Look at a final solution with electronics that fit into the existing compartment (SqueezeAmp?)
 - Replace the display module with a SPI/I2C module
