@@ -3,6 +3,8 @@
 ### Squeezebox-Spinner (TAudio-case) 
 Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.
 
+![Case Model](taudio-case.jpg)
+
 ### [Squeezebox-Dial](/twatcher-dial)
 Fixed Squeezebox Bluetooth controller using a TTGO T-Watcher (T4) module (to interface with BT speakers)
 
