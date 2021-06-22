@@ -12,6 +12,8 @@ Todo:
 - Replace the display module with led-dial and small SPI/I2C module
 - Investiage ways to extend battery life (especially in standby)
 
+![Squeezeamp Concept](squeezeamp-soundbar.PNG)![Exploded](squeezeamp-soundbar-exp.PNG)
+
 ## Deconstruction
 I resorted to brute force, a hack-saw, and dykes to get into the first unit!  In retrospect, the correct method is to peel back the right side of the display sticker to expose the 2 screws mounting the display module cover to the body extrusion.  Once removed the cover can be pulled out from under the end cap exposing 2 additional screws securing the end cap to the body extrusion.  With these screws removed, I am assuming the complete cap assembly (with the electronics and battery pack) would have come off as easily as the speaker end cap.
 
