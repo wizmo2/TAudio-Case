@@ -6,7 +6,7 @@ Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in
 ![Case Model](taudio-case.jpg)
 
 ### [Squeezebox-Dial](/twatcher-dial)
-Fixed Squeezebox Bluetooth controller using a TTGO T-Watcher (T4) module (to interface with BT speakers)
+Squeezebox Bluetooth controller using a TTGO T-Watcher (T4) module (to interface with BT speakers)
 
 ### [Squeezebox-Soundbar](/bluetooth-soundbar)
 Portable Squeezebox player based on an existing Bluetooth Soundbar.
