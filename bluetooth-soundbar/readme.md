@@ -12,7 +12,7 @@ Todo:
 - Replace the display module with led-dial and small SPI/I2C module
 - Investiage ways to extend battery life (especially in standby)
 
-| Concept | Exploded |
+| SqueezeAmp Concept | Exploded View |
 |--------------------|--------------------|
 |![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp.PNG)|
 
