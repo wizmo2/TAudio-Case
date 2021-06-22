@@ -11,7 +11,9 @@ Todo:
 - Look at a final solution with electronics that fit into the existing compartment (SqueezeAmp?)
 - Replace the display module with led-dial and small SPI/I2C module
 - Investiage ways to extend battery life (especially in standby)
-|-|-|
+
+| Concept | Exploded |
+|--------------------|--------------------|
 |![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp.PNG)|
 
 ## Deconstruction
