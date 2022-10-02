@@ -54,31 +54,29 @@ light:
              - '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'
              - '12'
      taudio_all:
+     taudio_all:
         friendly_name: "TAudio Color"
-        level_template: "{{states('input_number.taudio_l') | int}}"
-        value_template: "{{states('input_number.taudio_l') | int > 0}}"
-        color_template: "({{states('input_number.taudio_h') | int}}, {{states('input_number.taudio_s') | int}})"
+        level_template: "{{states('input_number.taudio_l') | int(0)}}"
+        value_template: "{{states('input_number.taudio_l') | int(0) > 0}}"
+        color_template: "({{states('input_number.taudio_h') | int(0)}}, {{states('input_number.taudio_s') | int(0)}})"
         turn_on:
           - service: input_number.set_value
             data:
               entity_id: input_number.taudio_l
-              value: '{{ state_attr("input_number.taudio_l","initial")|float }}'
+              value: '{{ state_attr("input_number.taudio_l","initial")|float(0) }}'
           - service: script.taudio_set
-                - "0"
         turn_off:
           - service: input_number.set_value
             data:
               entity_id: input_number.taudio_l
               value: "0"
           - service: script.taudio_set
-               - "0"
         set_level:
           - service: input_number.set_value
             data:
-              value: "{{ brightness| float }}"
+              value: "{{ brightness| float(0) }}"
               entity_id: input_number.taudio_l
           - service: script.taudio_set
-                - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
         set_color:
           - service: input_number.set_value
             data:
@@ -89,9 +87,9 @@ light:
               value: "{{ s }}"
               entity_id: input_number.taudio_s
           - service: script.taudio_set
-               - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
 
 input_number:
+  # The following helpers are required for the light template integration
   taudio_h:
     name: TAudio Hue
     min: 0
@@ -108,6 +106,11 @@ input_number:
     step: 1
 
 input_text:
+  # The following helper is used with the announce to speaker example
+  alert_trigger:
+    name: "Alert Trigger Source"
+  # The following helpers are used with the automations 
+  #  to search and play music based on a query
   taudio_play_songs:
     name: "Play Songs"
   taudio_play_artists:
@@ -115,7 +118,10 @@ input_text:
   taudio_play_albums:
     name: "Play Album"
 
+# These scripts should be replacted into the script.yaml
+#  if configured
 script:
+  # Shared function to simplify template lights
   taudio_set:
     alias: TAudio Set RGB Color
     sequence:
@@ -124,8 +130,9 @@ script:
           entity_id: media_player.squeezelite_taudio
           command: dmx
           parameters:
-            - '{% set gain = state_attr("light.taudio_all", "brightness")|int %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int * gain / 255)|round }},{{ (rgb[1]|int * gain / 255)|round }},{{ (rgb[2]|int * gain / 255)|round }},{% endif %}{% endfor %}'
+            - '{% set gain = state_attr("light.taudio_all", "brightness")|int(0) %}{% for n in range(19) %}{% if gain == 0 %}0,0,0,{% else %}{% set rgb = state_attr("light.taudio_all", "rgb_color") %}{{ (rgb[0]|int(0) * gain / 255)|round }},{{ (rgb[1]|int(0) * gain / 255)|round(0) }},{{ (rgb[2]|int(0) * gain / 255)|round(0) }},{% endif %}{% endfor %}'
             - "0"
+  # Used to flash lights in service calls
   taudio_alert_flash:
     alias: taudio_alert_flash
     sequence:
@@ -142,17 +149,16 @@ script:
           - delay: '00:00:03'
 
 notify:
+  # A Text-To_Speech platform is required for the announce to speaker example
   - platform: tts
     name: tts_announce
-    tts_service: tts.mary_say
-#    tts_service: tts.google_say
+    tts_service: tts.google_say
     media_player: media_player.squeezelite_taudio 
     
-input_text:
-  alert_trigger:
-    name: "Alert Trigger Source"
-
+# These automations should be located in the automation.yaml
+#  if configured.
 automation:
+    # Eaxample TTS notify using an input text helper
     - id: announce_to_speaker
       alias: TAudio Announce
       - platform: state
@@ -171,6 +177,7 @@ automation:
         data:
           message: {{ states('input_text.alert_trigger') }}
       mode: single
+    # The following automations use text helpers to search and play music
     - id: taudio_load_albums
       alias: taudio_load_albums
       description: ''
