@@ -161,6 +161,7 @@ automation:
     # Eaxample TTS notify using an input text helper
     - id: announce_to_speaker
       alias: TAudio Announce
+      trigger:
       - platform: state
         entity_id: input_text.alert_trigger      
       action:
@@ -175,7 +176,7 @@ automation:
         entity_id: media_player.squeezelite_taudio
       - service: notify.tts_announce
         data:
-          message: {{ states('input_text.alert_trigger') }}
+          message: "{{ states('input_text.alert_trigger') }}"
       mode: single
     # The following automations use text helpers to search and play music
     - id: taudio_load_albums
