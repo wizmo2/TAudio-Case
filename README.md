@@ -64,4 +64,5 @@ The T9 board has nearly everything that you need, although there are a couple of
 
 I haven't yet found a suitable speaker for a "speaker cap" option (as mentioned, will need a driver amp board as well)
 
+If you have issues with getting the server p0lugin to install, it may be necessary to install the standard SqueezeESP2 plugin and manuaaly update the files on the server.  (On the linux docker, this is located in the mounted config folder /config/cache/InstalledPlugins/Plugins/SqueezeESP32)
 
