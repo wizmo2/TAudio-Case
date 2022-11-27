@@ -17,7 +17,7 @@ This project was designed for a Squeezelite-ESP32 project used with Home-Assista
 [youtube link](https://youtu.be/1PFEcQugR4s)
 
 Case supports
-- [TTGO T9 Dev Board v1.6](http://www.lilygo.cn/prod_view.aspx?TypeId=50033&Id=1104&FId=t3:50033:3)
+- [TTGO T9 Dev Board v1.6](http://www.lilygo.cn/prod_view.aspx?TypeId=50063&Id=1171&FId=t3:50063:3)
 - •	interchangeable center caps for speaker, [128x64 SSD1306 two-color I2C oled](https://www.amazon.com/gp/product/B072Q2X2LL), [240x240 ST7789 color SPI oled](https://www.amazon.com/gp/product/B08FB77YY2)
 - 3 external buttons
 - up to 1250mA Lithium Battery
