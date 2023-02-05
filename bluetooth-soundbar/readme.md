@@ -16,8 +16,8 @@ Todo:
 |--------------------|--------------------|
 |![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp.PNG)|
 
-Update:
-I ordered a SqueezeAmp and have added a oled display
+Update: 
+I ordered a SqueezeAmp and have added a oled display plus 3 batteries.
 
 | SqueezeAmp Images | Exploded View |
 |--------------------|--------------------|
