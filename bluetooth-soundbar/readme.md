@@ -16,6 +16,13 @@ Todo:
 |--------------------|--------------------|
 |![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp.PNG)|
 
+Update:
+I ordered a SqueezeAmp and have added a oled display
+
+| SqueezeAmp Concept | Exploded View |
+|--------------------|--------------------|
+|![Squeezeamp Concept](squeezeamp-soundbar-img.PNG)![Squeezeamp Concept](squeezeamp-soundbar-img2.PNG)|![Exploded](squeezeamp-soundbar-exp2.PNG)|
+
 ## Deconstruction
 I resorted to brute force, a hack-saw, and dykes to get into the first unit!  In retrospect, the correct method is to peel back the right side of the display sticker to expose the 2 screws mounting the display module cover to the body extrusion.  Once removed the cover can be pulled out from under the end cap exposing 2 additional screws securing the end cap to the body extrusion.  With these screws removed, I am assuming the complete cap assembly (with the electronics and battery pack) would have come off as easily as the speaker end cap.
 
