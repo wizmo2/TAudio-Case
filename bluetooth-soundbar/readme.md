@@ -7,21 +7,16 @@ The current protoype uses a a1s audio kit.  The solution works well, is well sup
 
 ![A1S Protype](a1s-soundbar.jpg)
 
-Todo: 
-- Look at a final solution with electronics that fit into the existing compartment (SqueezeAmp?)
-- Replace the display module with led-dial and small SPI/I2C module
-- Investiage ways to extend battery life (especially in standby)
+Update: 
+- Ordered a SqueezeAmp which fits nicely in the existing compartment.
+- Replace the display module with led-dial and small I2C display module
+- Added 3x 18650 batteries. 
 
 | SqueezeAmp Concept | Exploded View |
 |--------------------|--------------------|
-|![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp.PNG)|
+|![Squeezeamp Concept](squeezeamp-soundbar.PNG)|![Exploded](squeezeamp-soundbar-exp2.png)|
 
-Update: 
-I ordered a SqueezeAmp and have added a oled display plus 3 batteries.
-
-| SqueezeAmp Images | Exploded View |
-|--------------------|--------------------|
-|![Squeezeamp](squeezeamp-soundbar-img.png)![Squeezeamp](squeezeamp-soundbar-img2.png)|![Exploded](squeezeamp-soundbar-exp2.png)|
+![Squeezeamp](squeezeamp-soundbar-img.png)![Squeezeamp](squeezeamp-soundbar-img2.png)
 
 ## Deconstruction
 I resorted to brute force, a hack-saw, and dykes to get into the first unit!  In retrospect, the correct method is to peel back the right side of the display sticker to expose the 2 screws mounting the display module cover to the body extrusion.  Once removed the cover can be pulled out from under the end cap exposing 2 additional screws securing the end cap to the body extrusion.  With these screws removed, I am assuming the complete cap assembly (with the electronics and battery pack) would have come off as easily as the speaker end cap.
