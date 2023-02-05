@@ -8,7 +8,7 @@ The current protoype uses a a1s audio kit.  The solution works well, is well sup
 ![A1S Protype](a1s-soundbar.jpg)
 
 Update: 
-- Ordered a SqueezeAmp which fits nicely in the existing compartment.
+- Ordered a [SqueezeAmp](https://github.com/philippe44/SqueezeAMP) which fits nicely in the existing compartment.
 - Replace the display module with led-dial and small I2C display module
 - Added 3x 18650 batteries. 
 
