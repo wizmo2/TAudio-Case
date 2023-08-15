@@ -35,5 +35,5 @@
 | 34 | BUTTON1 |*|
 | 35 | VBAT |*|
 | 36 | BUTTON3 |*|
-| 38 | BUTTON2 |*|
-| RST | RESET |*|
+| 38 | BUTTON2 |*SVP|
+| RST | RESET |*SVN|
