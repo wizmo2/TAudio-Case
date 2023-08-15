@@ -28,7 +28,7 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 ### Configuration
-**At time of writing, you will need to use build and flash the [TAudio1.6 branch](https://github.com/wizmo2/squeezelite-esp32) in my repository (until the led_visu components are merged)**
+**UPDATE:  The led_vu is merged.  At time of writing, you will need to use build and flash the master-v43 (until the next release)**
 
 For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetooth)
 
@@ -37,8 +37,10 @@ For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetoot
 | DAC | dac_config | model=WM8978,bck=33,ws=25,do=26,sda=19,scl=18,i2c=26 |
 | Led Strip | led_vu_config | WS2812,length=19,gpio=22 |
 | | bat_config | channel=7,scale=6.8,atten=3,cells=1 |
-| | actrls_config | buttons (see below) }
+| | actrls_config | buttons (see below) |
+| SPDIF Config* | spdif_config | bck=33,ws=25,do=15 |
 
+#### Buttons
 Suggested configuration for buttons using one of the display caps.  (The navigation is a little fiddly, but useable in a crunch)
 ```
 buttons 
@@ -52,6 +54,9 @@ Note: Do not set the "green" GPIO option as it shares gpio with the Led strip
 Backup files for squeezelite-ESP32 in [config](config/) folder
 
 Example yaml files for Home-Assistant in [hass](hass/) folder
+
+#### SPDIF
+Been experimenting with the SPDIF output options, as the performance (especially with a 16bit build) is much better.  Came up with a solution using a SDRAM extension adapter and tosklink transciever soldered (and epoxied) to the back.  I'm using pins 4 and 6 for 3.3V power and pin 3 (GPIO15, DAT0) for the data output. _NOTE: GPIO2 physically made a neater solution, but did not work_
 
 ## General Notes.
 I trimmed the rear IO header to prevent interference with the 1200mA battery (see why it doesn't really matter below).  With a different 1250mAh battery, it was not necessary. 
