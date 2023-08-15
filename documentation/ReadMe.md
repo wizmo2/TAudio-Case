@@ -34,6 +34,6 @@
 | 33 | DAC_BCK ||
 | 34 | BUTTON1 ||
 | 35 | VBAT ||
+| 36 | BUTTON2 ||
+| 38 | BUTTON3 ||
 | RST | RESET ||
-| SVP | BUTTON2 ||
-| SVN | BUTTON3 ||
