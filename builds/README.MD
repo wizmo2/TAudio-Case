@@ -8,7 +8,7 @@ To install these, I uploaded the bin files to a local web-server and used the UI
 
 I have NOT tested the zip version
 
-## MusciInfoSCR
+## MusicInfoSCR
 
 Included is a zip file with a modified version of MusciInfoSCR.  The modifications adds extra hardware icons to display wifi and battery status using the extisting Music Information plugin.  This version is provided for users that need to maintain support for server versions 7.0b through 8.1
 
