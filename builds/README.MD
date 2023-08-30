@@ -10,6 +10,6 @@ I have NOT tested the zip version
 
 ## MusciInfoSCR
 
-Included is a zip file with a modified version of MusciInfoSCR.  The modifications adds extra hardware icons to display wifi and battery status using the extisting Music Information plugin.
+Included is a zip file with a modified version of MusciInfoSCR.  The modifications adds extra hardware icons to display wifi and battery status using the extisting Music Information plugin.  This version is provided for users that need to maintain support for server versions 7.0b through 8.1
 
-To install this version, you need to manually unzip qand overright the files in your InstalledPlugins/Plugins/MusicInfoSCR folder
+To install, you have to manually unzip qand overright the files in your InstalledPlugins/Plugins/MusicInfoSCR folder
