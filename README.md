@@ -58,6 +58,8 @@ Example yaml files for Home-Assistant in [hass](hass/) folder
 #### SPDIF
 Been experimenting with the SPDIF output options, as the performance (especially with a 16bit build) is much better.  Came up with a solution using a SDRAM extension adapter and tosklink transciever soldered (and epoxied) to the back.  I'm using pins 4 and 6 for 3.3V power and pin 3 (GPIO15, DAT0) for the data output. _NOTE: GPIO2 physically made a neater solution, but did not work_
 
+![SPDIF-SD](toslink.png)
+
 ## General Notes.
 I trimmed the rear IO header to prevent interference with the 1200mA battery (see why it doesn't really matter below).  With a different 1250mAh battery, it was not necessary. 
 
