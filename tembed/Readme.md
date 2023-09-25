@@ -19,6 +19,8 @@ The T-embed kit comes with a a micro speaker, which I have integrated into the d
 
 ![Case Model](tembed-case.STL)
 
+_NOTE:  The origional design was for a 5mm LED style IR reciever, which would need additional driver electronics.  I used a VS1838B 3-pin version which, once the metal sheild is removed, fits snuggly in the same hole._
+
 ## Development code
 
 My [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This currently complies with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  I have cspot manually exculed as it does not complie easily under windows.
