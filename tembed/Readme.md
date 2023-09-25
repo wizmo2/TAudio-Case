@@ -6,7 +6,7 @@ The TTGO T-embed module has nearly everything you need for a squeezelite-esp32 p
 - Rotary Dial with Button
 - Addressable LEDs
 
-![Squeexelite-Tembed](tembed1.jpg)
+![Squeexelite-Tembed](tembed1.jpg)![Squeexelite-Tembed](tembed2.jpeg)
 
 Of course, life is not that simple!  Its a ESP32-S3, which is not fully supported. The display and LEDs also need custom code (but wheres the fun if its just Plug-n-Play 😲 ) 
 
