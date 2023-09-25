@@ -15,7 +15,7 @@ This project is targeted as a Squeezebox player for a home office.  I have a sma
 ## Case Design
 The [OEM repository](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main) has details of the kit, along with some basic shell designs.  My shell/case is based on this, but modified to to accommidate a Toslink transmitter, battery and an IR reciever.
 
-The T-embed kit comes with a a micro speaker, which I have integrated into the design, even though this and the mono DAC are not a priority on this project.  They do function in case we want to look at making a Radio style player.
+The T-embed kit comes with a a micro speaker, which I have integrated into the design, even though this and the mono DAC are not a priority on this project.  They do function in event we want to look at making a Radio style player.
 
 ![Case Model](tembed-case.STL)
 
