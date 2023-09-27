@@ -6,7 +6,7 @@ The TTGO T-embed module has nearly everything you need for a squeezelite-esp32 p
 - Rotary Dial with Button
 - Addressable LEDs
 
-![Squeexelite-Tembed](tembed1.jpg)![Squeexelite-Tembed](tembed2.jpeg)
+![Squeexelite-Tembed](tembed1.jpg)![Squeexelite-Tembed](tembed2.jpg)
 
 Of course, life is not that simple!  Its a ESP32-S3, which is not fully supported. The display and LEDs also need custom code (but wheres the fun if its just Plug-n-Play 😲 ) 
 
@@ -17,7 +17,7 @@ The [OEM repository](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main) has de
 
 The T-embed kit comes with a a micro speaker, which I have integrated into the design, even though this and the mono DAC are not a priority on this project.  They do function in event we want to look at making a Radio style player.
 
-![Case Model](tembed-case.STL)
+![Case Model](tembed-model.png) [model](tembed-case.STL)
 
 _NOTE:  The origional design was for a 5mm LED style IR reciever, which would need additional driver electronics.  I used a VS1838B 3-pin version which, once the metal sheild is removed, fits snuggly in the same hole._
 
