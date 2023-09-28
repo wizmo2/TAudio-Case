@@ -33,7 +33,8 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 ### Configuration
-**UPDATE:  The led_vu is merged.  At time of writing, you will need to use build and flash the master-v43 (until the next release)**
+Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/),
+ or flash the current Squeezelite-ESP32 firmware. 
 
 For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetooth)
 
