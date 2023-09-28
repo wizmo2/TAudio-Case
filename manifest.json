@@ -6,7 +6,7 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "merged-firmware.bin", "offset": 0 },
+        { "path": "build/squeezelite-tembed.custom.32-S3.bin", "offset": 0 },
       ]
     },
     {
