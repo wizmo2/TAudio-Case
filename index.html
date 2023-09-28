@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>ESP32 Installer</title>
+    <title>Projects ESP32 Installer</title>
     <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module">
     </script>
     <style>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="mb-3">
-            <esp-web-install-button id="button_web_install" manifest="manifest.json">
+            <esp-web-install-button id="button_web_install" manifest="/build/manifest.json">
                 <button type="button" class="btn btn-primary" slot="activate">Connect to device </button>
                 <span slot="not-allowed">
                     <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
@@ -44,17 +44,6 @@
                     <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-Tembed</label> </div>
                     <div class="card-body" >
                         <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Embed ESP32-S3 module</p>
-                        <img src="tembed/tembed1.jpg" width="100%"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="device_tiles" >
-            <div class="d-flex flex-row">
-                <div class="card  bg-secondary mb-3" style="max-width: 20rem;"  role="button" >
-                    <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-TAudio</label> </div>
-                    <div class="card-body" >
-                        <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Audio ESP32 module</p>
                         <img src="tembed/tembed1.jpg" width="100%"/>
                     </div>
                 </div>
