@@ -1,0 +1,17 @@
+{
+  "name": "Squeezelite-Tembed",
+  "version": "2023.9.27",
+  "home_assistant_domain": "media-player",
+  "new_install_skip_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "builds/squeezelite-tembed.esp32s3.32.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

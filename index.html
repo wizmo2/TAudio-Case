@@ -7,66 +7,29 @@
     <title>Projects ESP32 Installer</title>
     <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module">
     </script>
-    <style>
-
-    </style>
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-a09cef873428.css" /><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-5d486a4ede8e.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-27c8d635e4e5.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8438e75afd36.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-bf5665b96628.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-c414b5ba1dce.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-e5868b7374db.css" /><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-299ac9c64ec0.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-3a26e78ad0ff.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-primitives-6143c8f97ed1.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-047ee6293fcd.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-f8b0bc0f8e04.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-c66a6209026f.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-f7d9c60c14a8.css" />
 </head>
 <body>
-    <div class="container  " style=" height: 100%; ">
-        <div class="jumbotron" style="width: 100%; height: 75% ">
-            <h1 class="display-3">ESP32 Installer - Wizmo Projects</h1>
-            <p class="lead">Use this page to install firmware directly to a module connected to this workstation. </p>
-            <hr class="my-4">
-            <p>Plug the device to your computer using a usb cable or, as needed, a USB to serial adapter, select the hardware platform.</p>
-        </div>
+	<div style="margin-top:40px;">
+		<article class="markdown-body entry-content container-lg" itemprop="text">
+			<h1 tabindex="-1" id="user-content-squeezelite-esp32-diy-projects" dir="auto"><a class="heading-link" href="https://github.com/wizmo2/TAudio-Case#squeezelite-esp32-diy-projects">Squeezelite-ESP32 DIY Projects<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></h1>
+            <p>Installs ESP32 firmware directly to a device connected to your computer.</p>
+            <p>Plug in the device using a usb cable or serial adapter, then select the Connect button for the project.</p>
 
-        <div class="mb-3">
-            <esp-web-install-button id="button_web_install" manifest="builds/manifest.json">
-                <button type="button" class="btn btn-primary" slot="activate">Connect to device </button>
-                <span slot="not-allowed">
-                    <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
-                            data-bs-dismiss="alert"></button><strong>Not Allowed</strong>
-                        <div>Flashing is only supported from the local host or from a secure web site.</div>
-                    </div>
-                </span>
-                <span slot="notsupported">
-                    <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
-                            data-bs-dismiss="alert"></button><strong>Browser Not Supported</strong> <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility">Make
-                            sure you are using a compatible browser</a></div>
-                </span>
-            </esp-web-install-button>
-        </div>
-
-        <div id="device_tiles" >
-            <div class="d-flex flex-row">
-                <div class="card  bg-secondary mb-3" style="max-width: 20rem;"  role="button" >
-                    <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-Tembed</label> </div>
-                    <div class="card-body" >
-                        <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Embed ESP32-S3 module</p>
-                        <img src="tembed/tembed1.jpg" width="100%"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="height: 75%; ">
-            <div class="panel panel-default ">
-                <div class="panel-body">
-
-                    <ul id="platforms_tabs" class="nav nav-tabs" role="tablist"></ul>
-                    <div id="firmware_content" class="tab-content">
-                    </div>
-                    <div class="accordion" id="platforms"></div>
-                </div>
-                <div class="panel-footer mt-4">
-                    <a href="https://github.com/wizmo2/squeezelite-esp32">Squeezelite-ESP32 Fork</a>
-                    &mdash;
-                    <a href="https://github.com/wizmo2/TAudio-case">Wizmo Projects</a>
-                    &mdash;
-                    <a href="https://esphome.github.io/esp-web-tools/">Installer based on ESP Web Tools</a>
-                </div>
-            </div>
-        </div>
-    </div>
+			<h3 tabindex="-1"><a class="heading-link" href="https://github.com/wizmo2/TAudio-Case#squeezebox-spinner-taudio-case">Squeezebox-Spinner (ESP32 only)<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></h3>
+			<esp-web-install-button manifest="builds/manifest-taudio.json" style="float:right;"></esp-web-install-button>
+			<p dir="auto">Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in mini a 3d printed case.</p>
+			<p dir="auto"><img src="taudio-case.jpg" alt="Case Model" style="max-height: 100px;"></p>
+			<h3 tabindex="-1"><a class="heading-link" href="https://github.com/wizmo2/TAudio-Case/tree/main/tembed">Squeezebox-Tembed (ESP32-S3 only)<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></h3>
+			<esp-web-install-button manifest="builds/manifest-tembed.json" style="float:right;"></esp-web-install-button>
+			<p dir="auto">Squeezebox SPDIF player using a TTGO T-Embed module</p>
+			<p dir="auto"><img src="tembed/tembed1.jpg" alt="Tembed" style="max-height: 100px;"></p>
+		</article>
+	</div>
 </body>
 </html>
