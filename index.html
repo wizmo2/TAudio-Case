@@ -21,7 +21,7 @@
         </div>
 
         <div class="mb-3">
-            <esp-web-install-button id="button_web_install" manifest="base_manifest.json">
+            <esp-web-install-button id="button_web_install" manifest="manifest.json">
                 <button type="button" class="btn btn-primary" slot="activate">Connect to device </button>
                 <span slot="not-allowed">
                     <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
@@ -44,6 +44,17 @@
                     <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-Tembed</label> </div>
                     <div class="card-body" >
                         <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Embed ESP32-S3 module</p>
+                        <img src="tembed/tembed1.jpg" width="100%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="device_tiles" >
+            <div class="d-flex flex-row">
+                <div class="card  bg-secondary mb-3" style="max-width: 20rem;"  role="button" >
+                    <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-TAudio</label> </div>
+                    <div class="card-body" >
+                        <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Audio ESP32 module</p>
                         <img src="tembed/tembed1.jpg" width="100%"/>
                     </div>
                 </div>
