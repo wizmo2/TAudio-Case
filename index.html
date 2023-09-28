@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ESP32 Installer</title>
+    <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module">
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container  " style=" height: 100%; ">
+        <div class="jumbotron" style="width: 100%; height: 75% ">
+            <h1 class="display-3">ESP32 Installer - Wizmo Projects</h1>
+            <p class="lead">Use this page to install firmware directly to a module connected to this workstation. </p>
+            <hr class="my-4">
+            <p>Plug the device to your computer using a usb cable or, as needed, a USB to serial adapter, select the hardware platform.</p>
+        </div>
+
+        <div class="mb-3">
+            <esp-web-install-button id="button_web_install" manifest="base_manifest.json">
+                <button type="button" class="btn btn-primary" slot="activate">Connect to device </button>
+                <span slot="not-allowed">
+                    <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
+                            data-bs-dismiss="alert"></button><strong>Not Allowed</strong>
+                        <div>Flashing is only supported from the local host or from a secure web site.</div>
+                    </div>
+                </span>
+                <span slot="notsupported">
+                    <div class="alert alert-dismissible alert-danger"><button type="button" class="btn-close"
+                            data-bs-dismiss="alert"></button><strong>Browser Not Supported</strong> <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility">Make
+                            sure you are using a compatible browser</a></div>
+                </span>
+            </esp-web-install-button>
+        </div>
+
+        <div id="device_tiles" >
+            <div class="d-flex flex-row">
+                <div class="card  bg-secondary mb-3" style="max-width: 20rem;"  role="button" >
+                    <div class="card-header bg-primary" role="button" id="cardTembed_header"><input id="cardTembed" type="radio" checked=""><label for="cardTembed">Squeezelite-Tembed</label> </div>
+                    <div class="card-body" >
+                        <p class="card-text">Squeezelite-ESP32 firmware built specially for the T-Embed ESP32-S3 module</p>
+                        <img src="tembed/tembed1.jpg" width="100%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 75%; ">
+            <div class="panel panel-default ">
+                <div class="panel-body">
+
+                    <ul id="platforms_tabs" class="nav nav-tabs" role="tablist"></ul>
+                    <div id="firmware_content" class="tab-content">
+                    </div>
+                    <div class="accordion" id="platforms"></div>
+                </div>
+                <div class="panel-footer mt-4"><a
+                        href="https://github.com/sle118/squeezelite-esp32">Squeezelite-ESP32</a>
+                    &mdash;
+                    <a href="https://github.com/sle118/squeezelite-esp32-installer">Squeezelite-ESP32 Wizmo Projects/a>
+                    &mdash;
+                    <a href="https://esphome.github.io/esp-web-tools/">Installer based on ESP Web Tools</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
