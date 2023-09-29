@@ -8,7 +8,7 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "builds/squeezelite-tembed.esp32s3.32.bin",
+          "path": "squeezelite-tembed.esp32s3.32.bin",
           "offset": 0
         }
       ]
