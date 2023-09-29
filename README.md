@@ -33,8 +33,7 @@ NOTE:  The board is a sketch only.  Dimensions may not be accurate.
 ![Case Model](case/t_player.png)
 
 ### Configuration
-Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/),
- or flash the current Squeezelite-ESP32 firmware. 
+Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/), or flash the current Squeezelite-ESP32 firmware. 
 
 For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetooth)
 

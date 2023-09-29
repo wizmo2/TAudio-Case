@@ -10,7 +10,7 @@ The TTGO T-embed module has nearly everything you need for a squeezelite-esp32 p
 
 Of course, life is not that simple!  Its a ESP32-S3, which is not fully supported. The display and LEDs also need custom code (but wheres the fun if its just Plug-n-Play 😲 ) 
 
-**_NOTE: ESP32-S3 does not support Bluetooth Audio, so no BT or Airplay._**
+**_NOTE: ESP32-S3 does not support Bluetooth Audio, so no BT, or Airplay._**
 
 This project is targeted as a Squeezebox player for a home office.  I have a small d-class power amplifier with an optical input and a pair of small JVC bookshelf speakers that came with an old CD player.
 
@@ -25,8 +25,7 @@ _NOTE:  The origional design was for a 5mm LED style IR reciever, which would ne
 
 ## Development code
 
-Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/),  
- or my [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This needs to be comiled and flashed with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  I have cspot manually exculed as it does not complie easily under windows.
+Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/), or my [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This needs to be comiled and flashed with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  I have cspot manually excluded as it does not complie easily under windows.
 
 The latest version is fully functional.
 
