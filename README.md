@@ -48,11 +48,14 @@ For squeezelite-esp32 configuration use "I2S Dac" audio output mode (or Bluetoot
 
 #### Buttons
 Suggested configuration for buttons using one of the display caps.  (The navigation is a little fiddly, but useable in a crunch)
-```
+
 buttons 
+```
 [{"gpio":34,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_VOLDOWN"}, "longpress":{"pressed":"ACTRLS_PREV"}},  {"gpio":39,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_VOLUP"}, "longpress":{"pressed":"ACTRLS_NEXT"}},  {"gpio":36,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_TOGGLE"}, "longpress":{"pressed":"buttons_nav"}} ]
+```
 
 buttons_nav
+```
 [{"gpio":34,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_DOWN"}, "longpress":{"pressed":"BCTRLS_LEFT"}},  {"gpio":39,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"BCTRLS_UP"}, "longpress":{"pressed":"BCTRLS_RIGHT"}},  {"gpio":36,"type":"BUTTON_LOW","pull":true,"long_press":600, "normal":{"pressed":"ACTRLS_PLAY"}, "longpress":{"pressed":"buttons"}} ]
 ```
 Note: Do not set the "green" GPIO option as it shares gpio with the Led strip
