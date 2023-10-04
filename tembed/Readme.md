@@ -10,7 +10,7 @@ The TTGO T-embed module has nearly everything you need for a squeezelite-esp32 p
 
 Of course, life is not that simple!  Its a ESP32-S3, which is not fully supported. The display and LEDs also need custom code (but wheres the fun if its just Plug-n-Play 😲 ) 
 
-**_NOTE: ESP32-S3 does not support Bluetooth Audio, so no BT, or Airplay._**
+**_NOTE: ESP32-S3 does not support Bluetooth Audio, so no BT in or out._**
 
 This project is targeted as a Squeezebox player for a home office.  I have a small d-class power amplifier with an optical input and a pair of small JVC bookshelf speakers that came with an old CD player.
 
