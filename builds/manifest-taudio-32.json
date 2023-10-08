@@ -8,7 +8,7 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "squeezelite-taudio.esp32.16.bin",
+          "path": "squeezelite-taudio.esp32.32.bin",
           "offset": 0
         }
       ]
