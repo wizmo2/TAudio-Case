@@ -1,6 +1,6 @@
 {
   "name": "Squeezelite-Taudio",
-  "version": "2023.9.27",
+  "version": "2023.10.7",
   "home_assistant_domain": "media-player",
   "new_install_prompt_erase": true,
   "builds": [

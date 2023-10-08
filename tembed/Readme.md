@@ -12,7 +12,7 @@ Of course, life is not that simple!  Its a ESP32-S3, which is not fully supporte
 
 **_NOTE: ESP32-S3 does not support Bluetooth Audio, so no BT in or out._**
 
-This project is targeted as a Squeezebox player for a home office.  I have a small d-class power amplifier with an optical input and a pair of small JVC bookshelf speakers that came with an old CD player.
+This project is targeted as a PURE Squeezebox player for a home office.  I have a small d-class power amplifier with an optical input and a pair of mini JVC bookshelf speakers that came with an old CD player.
 
 ## Case Design
 The [OEM repository](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main) has details of the kit, along with some basic shell designs.  My shell/case is based on this, but modified to to accommidate a Toslink transmitter, battery and an IR reciever.
@@ -25,7 +25,7 @@ _NOTE:  The origional design was for a 5mm LED style IR reciever, which would ne
 
 ## Development code
 
-Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/), or my [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This needs to be comiled and flashed with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  I have cspot manually excluded as it does not complie easily under windows.
+Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/), or my [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This needs to be comiled and flashed with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  My PURE build manually excluded BT, Airplay, and CSpot (as they do not currently work well under the S3 platform).
 
 The latest version is fully functional.
 
