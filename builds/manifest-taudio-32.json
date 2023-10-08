@@ -1,5 +1,5 @@
 {
-  "name": "Squeezelite-Taudio",
+  "name": "Squeezelite-Taudio (32bit)",
   "version": "2023.10.7",
   "home_assistant_domain": "media-player",
   "new_install_prompt_erase": true,

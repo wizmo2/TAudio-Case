@@ -1,14 +1,14 @@
 {
-  "name": "Squeezelite-Tembed",
+  "name": "Squeezelite-Taudio (16bit)",
   "version": "2023.10.7",
   "home_assistant_domain": "media-player",
   "new_install_prompt_erase": true,
   "builds": [
     {
-      "chipFamily": "ESP32-S3",
+      "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "squeezelite-tembed.esp32s3.16.bin",
+          "path": "squeezelite-taudio.esp32.16.bin",
           "offset": 0
         }
       ]
