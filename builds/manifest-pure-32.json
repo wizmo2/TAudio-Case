@@ -1,6 +1,6 @@
 {
-  "name": "SqueezeliteESP32 PURE (16bit)",
-  "version": "2023.10.17",
+  "name": "Squeezelite-ESP32 PURE (32bit)",
+  "version": "2023.10.25",
   "home_assistant_domain": "media-player",
   "new_install_prompt_erase": true,
   "builds": [
