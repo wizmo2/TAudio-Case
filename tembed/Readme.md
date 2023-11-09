@@ -19,7 +19,8 @@ The [OEM repository](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main) has de
 
 The T-embed kit comes with a a micro speaker, which I have integrated into the design, even though this and the mono DAC are not a priority on this project.  They do function in event we want to look at making a Radio style player.
 
-![Case Model](tembed-model.png) [model](tembed-case.STL)
+![Case Model](tembed-model.png)
+case:[step](tembed-case.STEP)|[model](tembed-case.STEP) ir clip:[step](tembed-ir-clip.STEP)|[model](tembed-ir-clip.STL)
 
 _NOTE:  The origional design was for a 5mm LED style IR reciever, which would need additional driver electronics.  I used a VS1838B 3-pin version which, once the metal sheild is removed, fits snuggly in the same hole._
 
