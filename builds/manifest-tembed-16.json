@@ -1,6 +1,6 @@
 {
   "name": "Squeezelite-Tembed (16bit)",
-  "version": "2023.10.25",
+  "version": "2023.11.12",
   "home_assistant_domain": "media-player",
   "new_install_prompt_erase": true,
   "builds": [
