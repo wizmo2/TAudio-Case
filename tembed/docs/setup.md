@@ -1,7 +1,4 @@
 # Tembed Operation Manual
-## Assembly
-see [Project Page](https://github.com/wizmo2/TAudio-Case/tree/main/tembed#squeezelite-tembed) for details on harware configration and assembly.
-
 ## Flashing
 Connect your T-Embed device to a PC, then use the [web-installer page](https://wizmo2.github.io/TAudio-Case/) to flash the latest Squuezbox-Tembed firmware
 
@@ -45,7 +42,7 @@ Select "ADC(Line-in/Microphone)" service to enable the microphone service.  see 
 #### Audio Configuration
 ![Audio Mode](img/setup_audio.png)
 
-The Audio-Squeezelite settings can be used to control the audio stream from LMS. See [README](../README.md#additional-configuration-notes-from-the-web-ui) for detailed information.  Additional settings are availbler in the LMS "Player_Settings" menu.
+The Audio-Squeezelite settings can be used to control the audio stream from LMS. See [README](https://github.com/wizmo2/squeezelite-esp32#additional-configuration-notes-from-the-web-ui) for detailed information.  Additional settings are availbler in the LMS "Player_Settings" menu.
 
 Set the required audio output mode from the drop-down list
 - Analogue - speaker
@@ -74,21 +71,21 @@ The device has a number of additional configuration parameters that can be used 
 The Hardware "Clear" checkbox can be used to reset the configuration setting parameters to factor defaults.
 
 The following configuration settings can be found
-- The DAC configures the audio processing hardware. See [README](../README.md#dac)
-- The SPDIF configures the Toslink/SPDIF digital audio output. See [README](../README.md#spdif)
-- The SPI bus is the communications bus used for display and ethernet. See [README](../README.md#spi)
-- The I2C bus can be used for external axillaries. See [README](../README.md#i2c)
-- The built-in OLED Display. See [README](../README.md#display) for details on changing orientation.  Additional configuration is available in the "LMS Player_Setting-Extra_Settings-ESP32_settings" menu
-- The Rotary control and button See [README](../README.md#rotary-encoder) for customized operation modes
-- The LED Visualizer controls the RGB LED strip. See [README](../README.md#led-strip). The LED visualizer effect and brightness can be changed from the "Playe-Settings-Extra_Settings_ESP32_settings" menu in LMS.
-- The ADC configures the microphone input.  see [Voice Assistant Setup Guide](voice_assistant.md) for detailed instructions
+- The DAC configures the audio processing hardware. See [README](https://github.com/wizmo2/squeezelite-esp32#daci2s)
+- The SPDIF configures the Toslink/SPDIF digital audio output. See [README](https://github.com/wizmo2/squeezelite-esp32#spdif)
+- The SPI bus is the communications bus used for display and ethernet. See [README](https://github.com/wizmo2/squeezelite-esp32#spi)
+- The I2C bus can be used for external axillaries. See [README](https://github.com/wizmo2/squeezelite-esp32#i2c)
+- The built-in OLED Display. See [README](https://github.com/wizmo2/squeezelite-esp32#display) for details on changing orientation.  Additional configuration is available in the "LMS Player_Setting-Extra_Settings-ESP32_settings" menu
+- The Rotary control and button See [README](https://github.com/wizmo2/squeezelite-esp32#rotary-encoder) for customized operation modes
+- The LED Visualizer controls the RGB LED strip. See [README](https://github.com/wizmo2/squeezelite-esp32#led-strip). The LED visualizer effect and brightness can be changed from the "Playe-Settings-Extra_Settings_ESP32_settings" menu in LMS.
+- The ADC configures the microphone input.  see [Voice Assistant Setup Guide](https://github.com/wizmo2/squeezelite-esp32/blob/pure-v4.x/docs/voice_assistant.md#using-squeezelite-esp32-as-a-voice-assistant-satellite) for detailed instructions
 
 ![Controls](img/setup_hardware_rotary.png) ![Controls](img/setup_hardware_display.png) ![Controls](img/setup_hardware_led.png) ![Controls](img/setup_hardware_i2c.png)
 
-- The device supports an IR received.  see [README](../README.md#infrared) for details on supported remotes.
+- The device supports an IR received.  see [README](https://github.com/wizmo2/squeezelite-esp32#infrared) for details on supported remotes.
 
 ### Diagnostics
-The NVS Editor can be enabled from the Credits menu to expose and additional section to access the raw configurations settings. see [README](../README.md#Configuration) for detailed explanations for each setting
+The NVS Editor can be enabled from the Credits menu to expose and additional section to access the raw configurations settings. see [README](https://github.com/wizmo2/squeezelite-esp32#Configuration) for detailed explanations for each setting
 
 The Advanced Commands can be enabled to expose and additional section to access diagnostic parameters. 
 
