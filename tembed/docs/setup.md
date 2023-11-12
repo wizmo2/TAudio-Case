@@ -15,17 +15,17 @@ Connect your T-Embed device to a PC, then use the [web-installer page](https://w
 ## Setup
 **This guide assumes you already have a working Logitech Media Server instance running on your local network.**
 
-Install the SqueezeESP32 plugin from the LMS "Server_Settings-Plugin" menu. _NOTE: Material Skin (re. screenshots), LineIn and LineOut plugins are also recommended_
+Install the SqueezeESP32 plugin from the LMS Server Plugin Settings page. _NOTE: Material Skin (re. screenshots), Music Information Screen, LineIn and LineOut plugins are also recommended_
 
-When installed, additional menus are available in “LMS-Player_Settings” to configure the device. The Plugin adds an additional menu item to the device display (Extra-SqueezeESP32)
+When installed, and additional ESP32 Settings page is available when accessing the LMS Player Extra Settings page list. The Plugin adds an additional menu item to the device display (Extra-SqueezeESP32)
 
 ![Plugin](img/lms-player-settings.png)
 
 ### Device Setup
-In LMS, use the "Player_Settings-Configuration' button to access the devices Web-UI.
+Use the LMS Player Settings “Configuration” button to access the devices Web-UI.
 _NOTE:  You can also use your browser to navigate to the device ip address `http://<device_ip>'_  
 
-![Confuguration](img/lms-configuration.png)
+![Configuration](img/lms-configuration.png)
 
 A navigation bar provides access to various configuration setting sections.  Each section contains configuration settings with one or more parameters.  The current values are displayed.  Required parameters are indicated with a red (missing) or green icon.  To make changes to a configuration setting, set the parameters as needed and press the "Save" button to commit the changes.  Once all required configuration settings are configured, press the "Apply" button to commit the changes and restart the device. 
 
@@ -42,18 +42,17 @@ Select "ADC(Line-in/Microphone)" service to enable the microphone service.  see 
 #### Audio Configuration
 ![Audio Mode](img/setup_audio.png)
 
-The Audio-Squeezelite settings can be used to control the audio stream from LMS. See [README](https://github.com/wizmo2/squeezelite-esp32#additional-configuration-notes-from-the-web-ui) for detailed information.  Additional settings are availbler in the LMS "Player_Settings" menu.
+The Audio-Squeezelite settings can be used to control the audio stream from LMS. See [README](https://github.com/wizmo2/squeezelite-esp32#additional-configuration-notes-from-the-web-ui) for detailed information.  Additional settings are available in the LMS Player Settings page.
 
 Set the required audio output mode from the drop-down list
 - Analogue - speaker
 - Digital - Toslink output
 - Bluetooth - (not applicable)
 
-
 ### LMS Setup
 ![Audio Mode](img/lms-extras.png)
 
-Use the "Player_Settings-Extras_Settings-ESP32_settings' button to access additional player configuration for the device.
+Use the Player ESP32_Settings page to access additional player configuration for the device.
 
 Recommended settings are
 - Artwork: Enabled 120x32
@@ -61,8 +60,10 @@ Recommended settings are
 - LED Brightness: 40
 - LED Visualizer: Digital VU Meter
 
+Use the Player Music Information Screen Settings page to configure the Now Playing display configuration, including enabling the 'Show icons for hardware status" to display wifi and battery.  To enable the Music Information Screen, set the Screensaver in the Players Basic Settings page.
+
 ## Operation
-When powered on, the display and rotary controls allow access to the LMS menus to operate the device.  If insstalled, a infra-red remote can be sued to navigate the menus.  Remote control is also available throughout the LMS Squeezebox eco-system.  
+When powered on, the display and rotary controls allow access to the LMS menus to operate the device.  If installed, an infra-red remote can be sued to navigate the menus.  Remote control is also available throughout the LMS Squeezebox eco-system.  
 
 ## Troubleshooting
 The device has a number of additional configuration parameters that can be used for troubleshooting and diagnostics.  
@@ -75,9 +76,9 @@ The following configuration settings can be found
 - The SPDIF configures the Toslink/SPDIF digital audio output. See [README](https://github.com/wizmo2/squeezelite-esp32#spdif)
 - The SPI bus is the communications bus used for display and ethernet. See [README](https://github.com/wizmo2/squeezelite-esp32#spi)
 - The I2C bus can be used for external axillaries. See [README](https://github.com/wizmo2/squeezelite-esp32#i2c)
-- The built-in OLED Display. See [README](https://github.com/wizmo2/squeezelite-esp32#display) for details on changing orientation.  Additional configuration is available in the "LMS Player_Setting-Extra_Settings-ESP32_settings" menu
+- The built-in OLED Display. See [README](https://github.com/wizmo2/squeezelite-esp32#display) for details on changing orientation.  Additional configuration is available in the LMS Player ESP32 Settings page
 - The Rotary control and button See [README](https://github.com/wizmo2/squeezelite-esp32#rotary-encoder) for customized operation modes
-- The LED Visualizer controls the RGB LED strip. See [README](https://github.com/wizmo2/squeezelite-esp32#led-strip). The LED visualizer effect and brightness can be changed from the "Playe-Settings-Extra_Settings_ESP32_settings" menu in LMS.
+- The LED Visualizer controls the RGB LED strip. See [README](https://github.com/wizmo2/squeezelite-esp32#led-strip). The LED visualizer effect and brightness can be changed from the LMS Player ESP32 Settings page
 - The ADC configures the microphone input.  see [Voice Assistant Setup Guide](https://github.com/wizmo2/squeezelite-esp32/blob/pure-v4.x/docs/voice_assistant.md#using-squeezelite-esp32-as-a-voice-assistant-satellite) for detailed instructions
 
 ![Controls](img/setup_hardware_rotary.png) ![Controls](img/setup_hardware_display.png) ![Controls](img/setup_hardware_led.png) ![Controls](img/setup_hardware_i2c.png)
@@ -97,5 +98,6 @@ _**WARNING:  The Squeezelite Software Updates should not be used, unless you wis
 - The system will reboot into recovery mode (if not already in that mode), wipe the Squeezelite partition and download/flash the selected version 
 
 You can choose a local file or have a local webserver
+
 
 

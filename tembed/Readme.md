@@ -5,6 +5,7 @@ The TTGO T-embed module has nearly everything you need for a squeezelite-esp32 p
 - I2S Dac and amplifier
 - Rotary Dial with Button
 - Addressable LEDs
+- Biult-in Microphones
 
 ![Squeexelite-Tembed](tembed1.jpg)![Squeexelite-Tembed](tembed2.jpg)
 
@@ -26,6 +27,7 @@ It is necessary to remove the 2 mounting screws and unclip the PCB to solder in 
 
 
 ## Development code
+**Now includes a preview of ADC Sink to provide background streaming of the microphone for Voice Assistant control via Rhasspy and OpenWakeWord**
 
 Use the [Projects Web-Installer](https://wizmo2.github.io/TAudio-Case/), or my [squeezelite-esp32 fork](https://github.com/wizmo2/squeezelite-esp32/tree/dev-tembed-s3) has a dev-tembed-s3 branch.  This needs to be comiled and flashed with esp-idf v4.4.5.  The branch includes modified code to support the lower resultion ST7789 SPI display and APA102 leds.  My PURE build manually excluded BT, Airplay, and CSpot (as they do not currently work well under the S3 platform).
 
