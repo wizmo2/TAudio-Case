@@ -63,7 +63,7 @@ Recommended settings are
 Use the Player Music Information Screen Settings page to configure the Now Playing display configuration, including enabling the 'Show icons for hardware status" to display wifi and battery.  To enable the Music Information Screen, set the Screensaver in the Players Basic Settings page.
 
 ## Operation
-When powered on, the display and rotary controls allow access to the LMS menus to operate the device.  If installed, an infra-red remote can be sued to navigate the menus.  Remote control is also available throughout the LMS Squeezebox eco-system.  
+When powered on, the display and rotary controls allow access to the LMS menus to operate the device.  If installed, an infra-red remote can be used to navigate the menus.  Remote control is also available throughout the LMS Squeezebox eco-system.  
 
 ## Troubleshooting
 The device has a number of additional configuration parameters that can be used for troubleshooting and diagnostics.  
