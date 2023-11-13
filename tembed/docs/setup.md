@@ -37,7 +37,7 @@ The device name sets all named configurations, including the network host name a
 #### System-Services
 ![Service](img/setup_system_services.png)
 
-Select "ADC(Line-in/Microphone)" service to enable the microphone service.  see [Voice Assistant Setup Guide](https://github.com/wizmo2/squeezelite-esp32/blob/pure-v4.x/docs/voice_assistant.md#using-squeezelite-esp32-as-a-voice-assistant-satellite) for detailed instructions.
+Select "ADC(Line-in/Microphone)" service to enable background streaming the microphone audio.  see [Voice Assistant Setup Guide](https://github.com/wizmo2/squeezelite-esp32/blob/pure-v4.x/docs/voice_assistant.md#using-squeezelite-esp32-as-a-voice-assistant-satellite) for detailed instructions.
 
 #### Audio Configuration
 ![Audio Mode](img/setup_audio.png)
