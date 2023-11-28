@@ -6,7 +6,7 @@ Portable Squeezebox player using a TTGO TAudio (T9) running Squeezelite-ESP32 in
 ![Case Model](taudio-case.jpg)
 
 ### [Squeezebox-Tembed](/tembed)
-Squeezebox SPDIF player using a TTGO T-Embed module. ***Now with Rhasspy Satellite compatibility***  
+Squeezebox SPDIF player using a TTGO T-Embed module. ***Now with Rhasspy Satellite compatibility!***  
 
 ![Tembed](tembed/tembed1.jpg)
 
